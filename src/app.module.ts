@@ -8,6 +8,7 @@ import { UserModule } from './user/user.module';
 import { WalletModule } from './wallet/wallet.module';
 import { TransactionModule } from './transaction/transaction.module';
 import { Transaction } from './transaction/entities/transaction.entity';
+import { PrivatechatModule } from './privatechat/privatechat.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { Transaction } from './transaction/entities/transaction.entity';
     UserModule,
     WalletModule,
     TransactionModule,
+    PrivatechatModule,
   ],
   controllers: [AppController],
   providers: [AppService],
